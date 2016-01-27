@@ -9,7 +9,7 @@ The splunk query is on the following format:
 ```
 index=<index_name> | table <name_of_url_field> | sb field=<name_of_url_field>
 ```
-##Example with data from provided csv file:
+##Example search with input data from example csv file:
 ```
 index="phishing" | rename "Phish URL" as url | table url | sb field="url"'
 ```
