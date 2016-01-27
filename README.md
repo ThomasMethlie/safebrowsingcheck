@@ -11,7 +11,7 @@ index=<index_name> | table <name_of_url_field> | sb field=<name_of_url_field>
 ```
 ##Example search with input data from example csv file:
 ```
-index="phishing" | rename "Phish URL" as url | table url | sb field="url"'
+index="phishing" | rename "Phish URL" as url | table url | sb field="url"
 ```
 This will return a result with the following fields:
 - sb_code: result code from Google SB API (200, 204, 400, 401, 503)
